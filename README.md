@@ -1,9 +1,9 @@
 # CLICKER2
 
-date | version | author | Remark
----- | ---- | ---- | ----
-2016-08-27 | 1.0 | Roland van Straten | initial port
-2016-12-10 | 1.1 | Roland van Straten | Use UART Pin definitions
+| date | version | author | Remark |
+| ---- | ---- | ---- | ---- |
+| 2016-08-27 | 1.0 | Roland van Straten | initial port |
+| 2016-12-10 | 1.1 | Roland van Straten | Use UART Pin definitions |
 
 ![clicker2](./documents/clicker2.png)
 
@@ -68,17 +68,17 @@ f_setlabel("/flash/pybflash");
 ```
 ## Board IO Pins
 
-Board Label | CPU Pin | Description
----- | ---- | ---- | ----
-LD1 | PE12 | LED 1 (left), active low
-LD2 | PE15 | LED 2 (right), active low
-SW | PE0 | PYB switch, active low
-T2 | PE0 | left switch, active low
-T3 | PA10 | right switch, active low
-SENSEL | PB12 | select the battery measurement circuit
-VSENSE | PC5  | the battery voltage ADC channel
-FAULT | PC6 | status of the `FAULT` pin, active low
-BATSTAT | PD4 | status of the `CHARGE` pin, active low
+| Board Label | CPU Pin | Description |
+| ---- | ---- | ---- |
+| LD1 | PE12 | LED 1 (left), active low |
+| LD2 | PE15 | LED 2 (right), active low |
+| SW | PE0 | PYB switch, active low |
+| T2 | PE0 | left switch, active low |
+| T3 | PA10 | right switch, active low |
+| SENSEL | PB12 | select the battery measurement circuit |
+| VSENSE | PC5  | the battery voltage ADC channel |
+| FAULT | PC6 | status of the `FAULT` pin, active low |
+| BATSTAT | PD4 | status of the `CHARGE` pin, active low |
 
 ## Board Support Package
 A small BSP package is placed in `stmhal/boards/CLICKER2/scripts/` and can be used like:
