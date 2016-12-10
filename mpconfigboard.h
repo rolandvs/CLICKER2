@@ -2,7 +2,7 @@
   mpconfigboard.h
 
   for the CLICKER2 board
-  
+
 */
 #define MICROPY_HW_BOARD_NAME       "CLICKER2"
 #define MICROPY_HW_MCU_NAME         "STM32F407VGT6"
@@ -37,8 +37,9 @@
 #define MICROPY_HW_CAN1_NAME "CAN1" // CAN1 on RX,TX = Y3,Y4 = PB8,PB9
 #define MICROPY_HW_CAN2_NAME "CAN2" // CAN2 on RX,TX = Y5,Y6 = PB12,PB13
 
-// some extra init code goes in separate module
-#define MICROPY_BOARD_EARLY_INIT	(0)
+// some very low level init code goes in separate file
+#define MICROPY_BOARD_EARLY_INIT    CLICKER2_board_early_init
+void CLICKER2_board_early_init(void);
 
 // REPL on second port
 //#define MICROPY_HW_UART_REPL 		(1)				// port accessible through tag connect port
