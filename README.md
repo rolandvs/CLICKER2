@@ -101,11 +101,25 @@ print("Battery voltage is: {:4.2f}.".format(batval*9.9/4096))
 ### ReadChargerStatus()
 This reads the two status pins ```/CHARGE``` and ```/FAULT``` of the power supply and returns them.
 
+```
+charge, fault = clicker2.ReadChargerStatus()
+```
 ### IsChargerActive()
 Returns ```True``` if charging.
 
+```
+charge = clicker2.IsChargerActive()
+```
 ### IsFaultActive()
 Returns ```True``` if power supply generates a fault signal.
 
+```
+charge = clicker2.IsFaultActive()
+```
 ### IsButtonxPressed()
-Return ```True``` if button is pressed when calling ```IsButton1Pressed()``` or ```IsButton2Pressed()```.
+Return `True` if button is pressed.
+
+```
+SW1 = clicker2.IsButton1Pressed()
+SW2 = clicker2.IsButton2Pressed()
+```
