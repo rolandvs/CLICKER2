@@ -1,7 +1,7 @@
 # CLICKER2
 
 date | version | author | Remark
-- | - | - | -
+---- | ---- | ---- | ----
 2016-08-27 | 1.0 | Roland van Straten | initial port
 2016-12-10 | 1.1 | Roland van Straten | Use UART Pin definitions
 
@@ -21,12 +21,11 @@ cd ..
 make BOARD=CLICKER2
 ```
 
-
 ## Changes to micropython
 
 ### Board Specific
+Added directories:
 
-Added directories:<br>
 ```stmhal/boards/CLICKER2/``` with all board specific files.
 
 ```stmhal/boards/CLICKER2/documents/``` with the latest hardware documentation.
@@ -70,7 +69,7 @@ f_setlabel("/flash/pybflash");
 ## Board IO Pins
 
 Board Label | CPU Pin | Description
-- | - | -
+---- | ---- | ---- | ----
 LD1 | PE12 | LED 1 (left), active low
 LD2 | PE15 | LED 2 (right), active low
 SW | PE0 | PYB switch, active low
