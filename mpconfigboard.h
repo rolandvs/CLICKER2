@@ -20,7 +20,7 @@
 #define MICROPY_HW_ENABLE_DAC       (1)
 #define MICROPY_HW_ENABLE_CAN       (1)
 
-#define HSE_VALUE    				((uint32_t)25000000)
+//#define HSE_VALUE    				((uint32_t)25000000)
 // HSE is 25MHz
 #define MICROPY_HW_CLK_PLLM 		(25)
 #define MICROPY_HW_CLK_PLLN 		(336)
